@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import logo from '../assets/logo-transparent.png';
+import curtis from '../assets/curtis-folsom.png';
 ---
 
 <Layout title="Home">
@@ -34,6 +35,12 @@ import logo from '../assets/logo-transparent.png';
 		<div class="container mx-auto px-6">
 			<div class="flex flex-col md:flex-row gap-16 items-center">
 				<div class="md:w-1/2">
+					<div class="relative inline-block mb-8 md:mb-0">
+						<Image src={curtis} alt="Curtis Folsom" class="rounded-3xl shadow-2xl w-full max-w-md h-auto relative z-10" />
+						<div class="absolute -bottom-6 -right-6 w-full h-full border-4 border-[#ACC7C7] rounded-3xl z-0"></div>
+					</div>
+				</div>
+				<div class="md:w-1/2">
 					<h2 class="text-4xl font-bold text-[#2C3E50] mb-8 font-['Playfair_Display']">About Curtis</h2>
 					<div class="space-y-6 text-lg text-[#5D6D7E] leading-relaxed font-medium">
 						<p>
@@ -49,15 +56,20 @@ import logo from '../assets/logo-transparent.png';
 						<a href="/hidden-hills-llc/contact" class="text-[#2C3E50] font-bold text-lg border-b-2 border-[#ACC7C7] hover:border-[#2C3E50] transition-all pb-1">Let's chat about your needs &rarr;</a>
 					</div>
 				</div>
-				<div class="md:w-1/2 grid grid-cols-1 gap-8">
-					<div class="p-8 rounded-2xl bg-[#F4F6F7] border border-[#ACC7C7]/30 shadow-sm">
-						<h3 class="text-2xl font-bold mb-4 text-[#2C3E50] font-['Playfair_Display']">Expert Systems</h3>
-						<p class="text-[#5D6D7E] leading-relaxed italic">Leading software transitions, historical data cleanup, and bookkeeping excellence.</p>
-					</div>
-					<div class="p-8 rounded-2xl bg-[#ACC7C7]/10 border border-[#ACC7C7]/30 shadow-sm">
-						<h3 class="text-2xl font-bold mb-4 text-[#2C3E50] font-['Playfair_Display']">Local Expertise</h3>
-						<p class="text-[#5D6D7E] leading-relaxed italic">A business solutions company based in Athens, GA, helping local business owners succeed.</p>
-					</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-24 bg-[#F4F6F7]">
+		<div class="container mx-auto px-6">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+				<div class="p-10 rounded-3xl bg-white border border-[#ACC7C7]/30 shadow-sm">
+					<h3 class="text-2xl font-bold mb-4 text-[#2C3E50] font-['Playfair_Display']">Expert Systems</h3>
+					<p class="text-[#5D6D7E] leading-relaxed italic">Leading software transitions, historical data cleanup, and bookkeeping excellence.</p>
+				</div>
+				<div class="p-10 rounded-3xl bg-white border border-[#ACC7C7]/30 shadow-sm">
+					<h3 class="text-2xl font-bold mb-4 text-[#2C3E50] font-['Playfair_Display']">Local Expertise</h3>
+					<p class="text-[#5D6D7E] leading-relaxed italic">A business solutions company based in Athens, GA, helping local business owners succeed.</p>
 				</div>
 			</div>
 		</div>
