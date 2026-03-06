@@ -20,16 +20,17 @@ const { title } = Astro.props;
 		<title>{title} | Hidden Hills LLC</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 	</head>
-	<body class="bg-[#F8F9F9] text-[#2C3E50] flex flex-col min-h-screen font-['Montserrat']">
-		<header class="bg-[#ACC7C7] border-b border-[#2C3E50]/10 shadow-sm sticky top-0 z-50">
-			<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-				<a href="/hidden-hills-llc/" class="text-xl font-bold text-[#2C3E50] tracking-tight">Hidden Hills <span class="text-[#2C3E50]/70">LLC</span></a>
-				<div class="hidden md:flex space-x-10">
-					<a href="/hidden-hills-llc/" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all underline decoration-2 underline-offset-4 decoration-[#2C3E50]/30">Home</a>
-					<a href="/hidden-hills-llc/services" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all">Services</a>
-					<a href="/hidden-hills-llc/contact" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all">Contact</a>
+	<body class="bg-[#FCFAFA] text-[#2C3E50] flex flex-col min-h-screen font-['Plus_Jakarta_Sans'] selection:bg-[#ACC7C7]/30">
+		<div class="fixed inset-0 pointer-events-none opacity-[0.03] z-[100] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+		<header class="bg-[#FCFAFA]/80 backdrop-blur-md border-b border-[#2C3E50]/5 sticky top-0 z-50">
+			<nav class="container mx-auto px-6 py-5 flex justify-between items-center">
+				<a href="/hidden-hills-llc/" class="text-2xl font-bold text-[#2C3E50] tracking-tighter font-['Instrument_Serif']">Hidden Hills <span class="text-[#2C3E50]/40 italic">LLC</span></a>
+				<div class="hidden md:flex items-center space-x-12">
+					<a href="/hidden-hills-llc/" class="text-sm uppercase tracking-widest font-bold text-[#2C3E50]/60 hover:text-[#2C3E50] transition-colors">Home</a>
+					<a href="/hidden-hills-llc/services" class="text-sm uppercase tracking-widest font-bold text-[#2C3E50]/60 hover:text-[#2C3E50] transition-colors">Services</a>
+					<a href="/hidden-hills-llc/contact" class="px-6 py-2 border border-[#2C3E50] rounded-full text-xs uppercase tracking-widest font-bold hover:bg-[#2C3E50] hover:text-white transition-all">Contact</a>
 				</div>
 			</nav>
 		</header>
