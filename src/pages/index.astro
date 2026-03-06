@@ -3,48 +3,52 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Home">
-	<section class="bg-blue-900 text-white py-32 flex items-center justify-center relative overflow-hidden">
+	<section class="bg-[#AED6F1] text-[#2C3E50] py-32 flex items-center justify-center relative overflow-hidden">
 		<div class="container mx-auto px-6 text-center z-10">
-			<h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight drop-shadow-lg leading-tight">Clarity for Your <br class="hidden md:block" /><span class="text-blue-400">Financial Future</span></h1>
-			<p class="text-xl md:text-2xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-				Expert bookkeeping, financial process optimization, and business consulting for modern enterprises.
+			<h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tight font-['Playfair_Display'] leading-tight">Focus on what <br class="hidden md:block" />you <span class="italic text-[#2C3E50]">really love</span></h1>
+			<p class="text-xl md:text-2xl text-[#2C3E50]/80 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
+				I'm Curtis Folsom, and I help business owners take the administrative load off their plate so they can grow their business.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-6 justify-center">
-				<a href="/services" class="bg-blue-600 hover:bg-blue-500 px-10 py-5 rounded-xl font-bold text-xl shadow-lg transition-all hover:scale-105">Our Services</a>
-				<a href="/contact" class="bg-white hover:bg-gray-100 text-blue-900 px-10 py-5 rounded-xl font-bold text-xl shadow-lg transition-all hover:scale-105">Get Started</a>
+				<a href="/services" class="bg-[#2C3E50] hover:bg-[#1C2833] text-white px-10 py-5 rounded-xl font-bold text-xl shadow-lg transition-all hover:scale-105">View My Services</a>
+				<a href="/contact" class="bg-white hover:bg-[#F4F6F7] text-[#2C3E50] px-10 py-5 rounded-xl font-bold text-xl shadow-lg transition-all hover:scale-105 border border-[#AED6F1]">Get in Touch</a>
 			</div>
 		</div>
-		<div class="absolute inset-0 opacity-10 pointer-events-none">
+		<div class="absolute inset-0 opacity-20 pointer-events-none">
 			<svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<path d="M0 100 L100 0 L100 100 Z" fill="currentColor"></path>
+				<path d="M0 100 L100 0 L100 100 Z" fill="white"></path>
 			</svg>
 		</div>
 	</section>
 
 	<section class="py-24 bg-white">
 		<div class="container mx-auto px-6">
-			<div class="text-center max-w-3xl mx-auto mb-20">
-				<h2 class="text-4xl font-bold text-gray-900 mb-6">Built for Efficiency</h2>
-				<p class="text-xl text-gray-600 leading-relaxed font-light">
-					We help you stop worrying about spreadsheets and start focusing on growth. 
-					Hidden Hills LLC provides the financial backbone your business deserves.
-				</p>
-			</div>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-				<div class="p-10 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-					<div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-8 text-blue-600 text-3xl font-bold">1</div>
-					<h3 class="text-2xl font-bold mb-4">Precision Bookkeeping</h3>
-					<p class="text-gray-600 leading-relaxed italic">Accuracy is our baseline. Financial clarity is our mission.</p>
+			<div class="flex flex-col md:flex-row gap-16 items-center">
+				<div class="md:w-1/2">
+					<h2 class="text-4xl font-bold text-[#2C3E50] mb-8 font-['Playfair_Display']">About Curtis</h2>
+					<div class="space-y-6 text-lg text-[#5D6D7E] leading-relaxed font-medium">
+						<p>
+							I have an accounting degree from the University of Georgia and have financial experience in multiple industries. 
+							What fuels me is solving problems and creating efficient systems to save time and energy.
+						</p>
+						<p>
+							From multi-billion-dollar corporations to local businesses and nonprofits, I've worked with organizations of all sizes, 
+							and I would love to bring my breadth of knowledge to your company.
+						</p>
+					</div>
+					<div class="mt-10">
+						<a href="/contact" class="text-[#2C3E50] font-bold text-lg border-b-2 border-[#AED6F1] hover:border-[#2C3E50] transition-all pb-1">Let's chat about your needs &rarr;</a>
+					</div>
 				</div>
-				<div class="p-10 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-					<div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-8 text-blue-600 text-3xl font-bold">2</div>
-					<h3 class="text-2xl font-bold mb-4">Process Excellence</h3>
-					<p class="text-gray-600 leading-relaxed italic">Optimizing every workflow. Cutting friction out of your business day.</p>
-				</div>
-				<div class="p-10 rounded-2xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-					<div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-8 text-blue-600 text-3xl font-bold">3</div>
-					<h3 class="text-2xl font-bold mb-4">Expert Consulting</h3>
-					<p class="text-gray-600 leading-relaxed italic">Strategic insights that go beyond the balance sheet.</p>
+				<div class="md:w-1/2 grid grid-cols-1 gap-8">
+					<div class="p-8 rounded-2xl bg-[#F4F6F7] border border-[#AED6F1]/30 shadow-sm">
+						<h3 class="text-2xl font-bold mb-4 text-[#2C3E50] font-['Playfair_Display']">Expert Systems</h3>
+						<p class="text-[#5D6D7E] leading-relaxed italic">Leading software transitions, historical data cleanup, and bookkeeping excellence.</p>
+					</div>
+					<div class="p-8 rounded-2xl bg-[#AED6F1]/10 border border-[#AED6F1]/30 shadow-sm">
+						<h3 class="text-2xl font-bold mb-4 text-[#2C3E50] font-['Playfair_Display']">Local Expertise</h3>
+						<p class="text-[#5D6D7E] leading-relaxed italic">A business solutions company based in Athens, GA, helping local business owners succeed.</p>
+					</div>
 				</div>
 			</div>
 		</div>

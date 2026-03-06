@@ -3,78 +3,66 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Services">
-	<section class="bg-blue-900 text-white py-24 flex items-center justify-center">
+	<section class="bg-[#2C3E50] text-white py-24 flex items-center justify-center">
 		<div class="container mx-auto px-6 text-center">
-			<h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight drop-shadow-lg">Tailored Business Solutions</h1>
-			<p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto leading-relaxed font-light italic">
-				We help you stop worrying about spreadsheets and start focusing on growth. 
+			<h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight font-['Playfair_Display']">Services Offered</h1>
+			<p class="text-lg md:text-xl text-[#AED6F1]/80 max-w-2xl mx-auto leading-relaxed font-medium italic">
+				Efficient systems to save you time and energy.
 			</p>
 		</div>
 	</section>
 
 	<section class="py-24 bg-white">
 		<div class="container mx-auto px-6">
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
-				<div class="order-2 md:order-1">
-					<div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mb-10 text-blue-600 shadow-sm border border-blue-50">
-						<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+				<!-- Service 1 -->
+				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-md transition-all">
+					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50]">
+						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
 					</div>
-					<h2 class="text-3xl font-bold mb-6 text-gray-900 leading-tight">Expert Bookkeeping</h2>
-					<p class="text-gray-600 leading-relaxed text-lg mb-8 font-light italic">
-						Precision financial tracking is the foundation of every successful business. 
-						Hidden Hills LLC provides thorough bookkeeping services so you always have a clear view of your financial health.
+					<h2 class="text-2xl font-bold mb-6 text-[#2C3E50] font-['Playfair_Display']">Bookkeeping & Accounting</h2>
+					<p class="text-[#5D6D7E] leading-relaxed mb-6 font-medium">
+						I have a strong background in accounting and can ensure accurate financial records, categorize expenses, handle invoicing, bank reconciliations and more. My experience across several industries will be at your fingertips to help you tidy up your records and help you grow.
 					</p>
-					<ul class="space-y-4 text-gray-700 font-medium">
-						<li class="flex items-center space-x-4"><span class="w-2 h-2 bg-blue-600 rounded-full"></span><span>Accurate accounts receivable & payable</span></li>
-						<li class="flex items-center space-x-4"><span class="w-2 h-2 bg-blue-600 rounded-full"></span><span>Monthly bank and credit card reconciliations</span></li>
-						<li class="flex items-center space-x-4"><span class="w-2 h-2 bg-blue-600 rounded-full"></span><span>Comprehensive financial reporting & insights</span></li>
-					</ul>
 				</div>
-				<div class="order-1 md:order-2 bg-gray-50 p-12 rounded-3xl border border-gray-100 shadow-sm">
-					<div class="text-center italic text-gray-400 text-lg py-12">"Focus on your craft. Let us handle the numbers."</div>
+
+				<!-- Service 2 -->
+				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-md transition-all">
+					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50]">
+						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+					</div>
+					<h2 class="text-2xl font-bold mb-6 text-[#2C3E50] font-['Playfair_Display']">Process Improvement</h2>
+					<p class="text-[#5D6D7E] leading-relaxed mb-6 font-medium">
+						I can assess your current financial processes and protocols, and recommend improvements to enhance efficiency, productivity, and cost effectiveness. I'm also glad to assist with general operation process improvement.
+					</p>
+				</div>
+
+				<!-- Service 3 -->
+				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-md transition-all">
+					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50]">
+						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"></path></svg>
+					</div>
+					<h2 class="text-2xl font-bold mb-6 text-[#2C3E50] font-['Playfair_Display']">Spreadsheet Creation/Automation</h2>
+					<p class="text-[#5D6D7E] leading-relaxed mb-6 font-medium">
+						I've worked with large data sets throughout my career and have a knack for creating, cleaning up, and utilizing spreadsheets to help automate processes and workflows to save you time. I'd love to use my knowledge to help build out a spreadsheet to fit your needs.
+					</p>
+				</div>
+
+				<!-- Service 4 -->
+				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-md transition-all">
+					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50]">
+						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+					</div>
+					<h2 class="text-2xl font-bold mb-6 text-[#2C3E50] font-['Playfair_Display']">Other Special Projects</h2>
+					<p class="text-[#5D6D7E] leading-relaxed mb-6 font-medium">
+						Is there a project that's outside the scope of your daily work that you would love to complete but just can't find the time? I can help with miscellaneous projects that will help improve your business such as data entry, organization, software transition, etc.
+					</p>
 				</div>
 			</div>
-
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-24">
-				<div class="bg-gray-50 p-12 rounded-3xl border border-gray-100 shadow-sm">
-					<div class="text-center italic text-gray-400 text-lg py-12">"Efficiency is the difference between surviving and thriving."</div>
-				</div>
-				<div>
-					<div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mb-10 text-blue-600 shadow-sm border border-blue-50">
-						<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-					</div>
-					<h2 class="text-3xl font-bold mb-6 text-gray-900 leading-tight">Financial Process Improvement</h2>
-					<p class="text-gray-600 leading-relaxed text-lg mb-8 font-light italic">
-						Is your business held back by outdated workflows? We specialize in identifying friction and implementing 
-						efficient, modern financial processes that save time and reduce errors.
-					</p>
-					<ul class="space-y-4 text-gray-700 font-medium">
-						<li class="flex items-center space-x-4"><span class="w-2 h-2 bg-blue-600 rounded-full"></span><span>Workflow audits and optimization</span></li>
-						<li class="flex items-center space-x-4"><span class="w-2 h-2 bg-blue-600 rounded-full"></span><span>Tech stack integration & automation</span></li>
-						<li class="flex items-center space-x-4"><span class="w-2 h-2 bg-blue-600 rounded-full"></span><span>Internal control development</span></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-				<div>
-					<div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mb-10 text-blue-600 shadow-sm border border-blue-50">
-						<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"></path></svg>
-					</div>
-					<h2 class="text-3xl font-bold mb-6 text-gray-900 leading-tight">Spreadsheet Creation & Consulting</h2>
-					<p class="text-gray-600 leading-relaxed text-lg mb-8 font-light italic">
-						We create powerful, custom spreadsheet tools tailored specifically to your data needs. 
-						From budgeting templates to complex project trackers, we build systems that work for you.
-					</p>
-					<ul class="space-y-4 text-gray-700 font-medium">
-						<li class="flex items-center space-x-4"><span class="w-2 h-2 bg-blue-600 rounded-full"></span><span>Custom budgeting & forecasting tools</span></li>
-						<li class="flex items-center space-x-4"><span class="w-2 h-2 bg-blue-600 rounded-full"></span><span>Dashboard creation & data visualization</span></li>
-						<li class="flex items-center space-x-4"><span class="w-2 h-2 bg-blue-600 rounded-full"></span><span>Strategic business consulting sessions</span></li>
-					</ul>
-				</div>
-				<div class="bg-gray-50 p-12 rounded-3xl border border-gray-100 shadow-sm">
-					<div class="text-center italic text-gray-400 text-lg py-12">"Data-driven decisions for long-term success."</div>
-				</div>
+			
+			<div class="text-center">
+				<p class="text-xl text-[#2C3E50] font-bold mb-8 italic">Ready to streamline your business?</p>
+				<a href="/contact" class="bg-[#AED6F1] hover:bg-[#85C1E9] text-[#2C3E50] px-10 py-5 rounded-xl font-bold text-xl shadow-md transition-all inline-block">Request a Quote</a>
 			</div>
 		</div>
 	</section>

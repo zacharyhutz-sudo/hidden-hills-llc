@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png';
 
 interface Props {
 	title: string;
@@ -16,15 +18,21 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title} | Hidden Hills LLC</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 	</head>
-	<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
-		<header class="bg-white border-b border-gray-200 shadow-sm">
+	<body class="bg-[#F8F9F9] text-[#2C3E50] flex flex-col min-h-screen font-['Montserrat']">
+		<header class="bg-white border-b border-[#AED6F1]/30 shadow-sm sticky top-0 z-50">
 			<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-				<a href="/" class="text-2xl font-bold text-blue-800 tracking-tight">Hidden Hills <span class="text-gray-600">LLC</span></a>
+				<a href="/" class="flex items-center gap-3">
+					<Image src={logo} alt="Hidden Hills LLC Logo" class="h-12 w-auto" />
+					<span class="text-xl font-bold text-[#2C3E50] tracking-tight hidden sm:block">Hidden Hills <span class="text-[#5D6D7E]">LLC</span></span>
+				</a>
 				<div class="hidden md:flex space-x-10">
-					<a href="/" class="text-gray-600 hover:text-blue-800 font-medium transition-colors">Home</a>
-					<a href="/services" class="text-gray-600 hover:text-blue-800 font-medium transition-colors">Services</a>
-					<a href="/contact" class="text-gray-600 hover:text-blue-800 font-medium transition-colors">Contact</a>
+					<a href="/" class="text-[#5D6D7E] hover:text-[#2C3E50] font-semibold transition-colors">Home</a>
+					<a href="/services" class="text-[#5D6D7E] hover:text-[#2C3E50] font-semibold transition-colors">Services</a>
+					<a href="/contact" class="text-[#5D6D7E] hover:text-[#2C3E50] font-semibold transition-colors">Contact</a>
 				</div>
 			</nav>
 		</header>
@@ -33,30 +41,33 @@ const { title } = Astro.props;
 			<slot />
 		</main>
 
-		<footer class="bg-gray-900 text-white py-16">
+		<footer class="bg-[#2C3E50] text-white py-16">
 			<div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
 				<div>
-					<h3 class="text-xl font-bold mb-6">Hidden Hills LLC</h3>
-					<p class="text-gray-400 leading-relaxed">
-						Empowering businesses through financial clarity and operational excellence. 
-						Specializing in bookkeeping, process improvement, and strategic consulting.
+					<div class="flex items-center gap-3 mb-6">
+						<Image src={logo} alt="Hidden Hills LLC Logo" class="h-10 w-auto brightness-0 invert" />
+						<h3 class="text-xl font-bold">Hidden Hills LLC</h3>
+					</div>
+					<p class="text-[#AED6F1]/70 leading-relaxed">
+						Helping business owners spend less time on paperwork and more time doing what they love. 
+						Based in Athens, GA.
 					</p>
 				</div>
 				<div>
-					<h3 class="text-lg font-bold mb-6">Quick Links</h3>
-					<ul class="space-y-4 text-gray-400">
+					<h3 class="text-lg font-bold mb-6 text-[#AED6F1]">Quick Links</h3>
+					<ul class="space-y-4 text-[#AED6F1]/70">
 						<li><a href="/" class="hover:text-white transition-colors">Home</a></li>
 						<li><a href="/services" class="hover:text-white transition-colors">Services</a></li>
 						<li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
 					</ul>
 				</div>
 				<div>
-					<h3 class="text-lg font-bold mb-6">Connect</h3>
-					<p class="text-gray-400 mb-4 italic">Let's build something efficient together.</p>
-					<a href="/contact" class="inline-block bg-blue-700 hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold transition-colors">Get in Touch</a>
+					<h3 class="text-lg font-bold mb-6 text-[#AED6F1]">Connect</h3>
+					<p class="text-[#AED6F1]/70 mb-4 italic">Let me help you take the administrative load off your plate.</p>
+					<a href="/contact" class="inline-block bg-[#AED6F1] hover:bg-[#85C1E9] text-[#2C3E50] px-6 py-3 rounded-lg font-bold transition-colors">Get in Touch</a>
 				</div>
 			</div>
-			<div class="container mx-auto px-6 mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+			<div class="container mx-auto px-6 mt-16 pt-8 border-t border-[#5D6D7E]/30 text-center text-[#5D6D7E] text-sm font-medium">
 				&copy; {new Date().getFullYear()} Hidden Hills LLC. All rights reserved.
 			</div>
 		</footer>
