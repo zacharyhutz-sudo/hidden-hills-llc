@@ -53,29 +53,29 @@ const isContact = title === 'Contact';
 		</main>
 
 		<script>
-			const observerOptions = {
-				root: null,
-				rootMargin: '0px',
-				threshold: 0.1
-			};
-
-			const observer = new IntersectionObserver((entries) => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting) {
-						entry.target.classList.add('reveal-active');
-						// Only unobserve if we don't want it to repeat
-						// observer.unobserve(entry.target);
-					}
-				});
-			}, observerOptions);
-
-			// Initialize animations on load and when content changes
 			const initAnimations = () => {
+				const observerOptions = {
+					root: null,
+					rootMargin: '0px',
+					threshold: 0.1
+				};
+
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('reveal-active');
+						}
+					});
+				}, observerOptions);
+
 				const animatedElements = document.querySelectorAll('.reveal-text-content, .reveal-fade-up, .reveal-line');
 				animatedElements.forEach(el => observer.observe(el));
 			};
 
-			document.addEventListener('DOMContentLoaded', initAnimations);
+			// Run on initial load
+			initAnimations();
+
+			// Run after view transitions
 			document.addEventListener('astro:after-swap', initAnimations);
 		</script>
 
