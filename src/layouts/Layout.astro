@@ -23,16 +23,16 @@ const { title } = Astro.props;
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 	</head>
 	<body class="bg-[#F8F9F9] text-[#2C3E50] flex flex-col min-h-screen font-['Montserrat']">
-		<header class="bg-white border-b border-[#AED6F1]/30 shadow-sm sticky top-0 z-50">
+		<header class="bg-[#AED6F1] border-b border-[#2C3E50]/10 shadow-sm sticky top-0 z-50">
 			<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
 				<a href="/" class="flex items-center gap-3">
 					<Image src={logo} alt="Hidden Hills LLC Logo" class="h-12 w-auto" />
-					<span class="text-xl font-bold text-[#2C3E50] tracking-tight hidden sm:block">Hidden Hills <span class="text-[#5D6D7E]">LLC</span></span>
+					<span class="text-xl font-bold text-[#2C3E50] tracking-tight hidden sm:block">Hidden Hills <span class="text-[#2C3E50]/70">LLC</span></span>
 				</a>
 				<div class="hidden md:flex space-x-10">
-					<a href="/" class="text-[#5D6D7E] hover:text-[#2C3E50] font-semibold transition-colors">Home</a>
-					<a href="/services" class="text-[#5D6D7E] hover:text-[#2C3E50] font-semibold transition-colors">Services</a>
-					<a href="/contact" class="text-[#5D6D7E] hover:text-[#2C3E50] font-semibold transition-colors">Contact</a>
+					<a href="/" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all underline decoration-2 underline-offset-4 decoration-[#2C3E50]/30">Home</a>
+					<a href="/services" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all">Services</a>
+					<a href="/contact" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all">Contact</a>
 				</div>
 			</nav>
 		</header>

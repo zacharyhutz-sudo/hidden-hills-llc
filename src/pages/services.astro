@@ -3,66 +3,99 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Services">
-	<section class="bg-[#2C3E50] text-white py-24 flex items-center justify-center">
-		<div class="container mx-auto px-6 text-center">
+	<section class="bg-[#AED6F1] text-[#2C3E50] py-24 flex items-center justify-center relative overflow-hidden">
+		<div class="container mx-auto px-6 text-center z-10">
 			<h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight font-['Playfair_Display']">Services Offered</h1>
-			<p class="text-lg md:text-xl text-[#AED6F1]/80 max-w-2xl mx-auto leading-relaxed font-medium italic">
+			<p class="text-lg md:text-xl text-[#2C3E50]/80 max-w-2xl mx-auto leading-relaxed font-medium italic">
 				Efficient systems to save you time and energy.
 			</p>
+		</div>
+		<div class="absolute inset-0 opacity-20 pointer-events-none">
+			<svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path d="M0 100 L100 0 L100 100 Z" fill="white"></path>
+			</svg>
 		</div>
 	</section>
 
 	<section class="py-24 bg-white">
 		<div class="container mx-auto px-6">
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
-				<!-- Service 1 -->
-				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-md transition-all">
-					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50]">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+				<!-- Bookkeeping & Accounting -->
+				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-xl transition-all group hover:-translate-y-2">
+					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50] group-hover:scale-110 transition-transform">
 						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
 					</div>
 					<h2 class="text-2xl font-bold mb-6 text-[#2C3E50] font-['Playfair_Display']">Bookkeeping & Accounting</h2>
 					<p class="text-[#5D6D7E] leading-relaxed mb-6 font-medium">
 						I have a strong background in accounting and can ensure accurate financial records, categorize expenses, handle invoicing, bank reconciliations and more. My experience across several industries will be at your fingertips to help you tidy up your records and help you grow.
 					</p>
+					<ul class="space-y-3 text-[#5D6D7E] font-medium">
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Invoicing & Accounts Receivable</li>
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Expense Categorization</li>
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Monthly Bank Reconciliations</li>
+					</ul>
 				</div>
 
-				<!-- Service 2 -->
-				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-md transition-all">
-					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50]">
+				<!-- Process Improvement -->
+				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-xl transition-all group hover:-translate-y-2">
+					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50] group-hover:scale-110 transition-transform">
 						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
 					</div>
 					<h2 class="text-2xl font-bold mb-6 text-[#2C3E50] font-['Playfair_Display']">Process Improvement</h2>
 					<p class="text-[#5D6D7E] leading-relaxed mb-6 font-medium">
 						I can assess your current financial processes and protocols, and recommend improvements to enhance efficiency, productivity, and cost effectiveness. I'm also glad to assist with general operation process improvement.
 					</p>
+					<ul class="space-y-3 text-[#5D6D7E] font-medium">
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Financial Workflow Audits</li>
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Productivity Consulting</li>
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> General Operation Support</li>
+					</ul>
 				</div>
 
-				<!-- Service 3 -->
-				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-md transition-all">
-					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50]">
+				<!-- Spreadsheet Creation/Automation -->
+				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-xl transition-all group hover:-translate-y-2">
+					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50] group-hover:scale-110 transition-transform">
 						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"></path></svg>
 					</div>
 					<h2 class="text-2xl font-bold mb-6 text-[#2C3E50] font-['Playfair_Display']">Spreadsheet Creation/Automation</h2>
 					<p class="text-[#5D6D7E] leading-relaxed mb-6 font-medium">
 						I've worked with large data sets throughout my career and have a knack for creating, cleaning up, and utilizing spreadsheets to help automate processes and workflows to save you time. I'd love to use my knowledge to help build out a spreadsheet to fit your needs.
 					</p>
+					<ul class="space-y-3 text-[#5D6D7E] font-medium">
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Workflow Automation</li>
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Data Cleanup & Organization</li>
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Custom Dashboard Creation</li>
+					</ul>
 				</div>
 
-				<!-- Service 4 -->
-				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-md transition-all">
-					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50]">
+				<!-- Other Special Projects -->
+				<div class="p-10 rounded-3xl bg-[#F4F6F7] border border-[#AED6F1]/30 hover:shadow-xl transition-all group hover:-translate-y-2">
+					<div class="w-16 h-16 bg-[#AED6F1] rounded-2xl flex items-center justify-center mb-8 text-[#2C3E50] group-hover:scale-110 transition-transform">
 						<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
 					</div>
 					<h2 class="text-2xl font-bold mb-6 text-[#2C3E50] font-['Playfair_Display']">Other Special Projects</h2>
 					<p class="text-[#5D6D7E] leading-relaxed mb-6 font-medium">
 						Is there a project that's outside the scope of your daily work that you would love to complete but just can't find the time? I can help with miscellaneous projects that will help improve your business such as data entry, organization, software transition, etc.
 					</p>
+					<ul class="space-y-3 text-[#5D6D7E] font-medium">
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Software Transition & Implementation</li>
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Large-scale Data Entry</li>
+						<li class="flex items-center gap-2"><svg class="w-5 h-5 text-[#AED6F1]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Historical Data Cleanup</li>
+					</ul>
 				</div>
 			</div>
 			
-			<div class="text-center">
-				<p class="text-xl text-[#2C3E50] font-bold mb-8 italic">Ready to streamline your business?</p>
-				<a href="/contact" class="bg-[#AED6F1] hover:bg-[#85C1E9] text-[#2C3E50] px-10 py-5 rounded-xl font-bold text-xl shadow-md transition-all inline-block">Request a Quote</a>
+			<div class="bg-[#2C3E50] rounded-3xl p-12 text-center text-white shadow-xl relative overflow-hidden">
+				<div class="relative z-10">
+					<h2 class="text-3xl font-bold mb-6 font-['Playfair_Display']">Let's build something efficient.</h2>
+					<p class="text-[#AED6F1] text-xl mb-10 max-w-xl mx-auto">I'd love to learn about your business and see how I can help you save time.</p>
+					<a href="/contact" class="bg-[#AED6F1] hover:bg-[#85C1E9] text-[#2C3E50] px-10 py-5 rounded-xl font-bold text-xl transition-all shadow-md inline-block hover:scale-105">Request a Quote</a>
+				</div>
+				<div class="absolute inset-0 opacity-10 pointer-events-none">
+					<svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path d="M0 0 L100 100 L0 100 Z" fill="#AED6F1"></path>
+					</svg>
+				</div>
 			</div>
 		</div>
 	</section>
