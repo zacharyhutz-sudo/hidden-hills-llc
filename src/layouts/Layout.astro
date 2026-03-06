@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import { Image } from 'astro:assets';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-transparent.png';
 
 interface Props {
 	title: string;
@@ -23,7 +23,7 @@ const { title } = Astro.props;
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 	</head>
 	<body class="bg-[#F8F9F9] text-[#2C3E50] flex flex-col min-h-screen font-['Montserrat']">
-		<header class="bg-[#AED6F1] border-b border-[#2C3E50]/10 shadow-sm sticky top-0 z-50">
+		<header class="bg-[#ACC7C7] border-b border-[#2C3E50]/10 shadow-sm sticky top-0 z-50">
 			<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
 				<a href="/" class="flex items-center gap-3">
 					<Image src={logo} alt="Hidden Hills LLC Logo" class="h-12 w-auto" />
