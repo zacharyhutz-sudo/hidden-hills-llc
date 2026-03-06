@@ -25,10 +25,7 @@ const { title } = Astro.props;
 	<body class="bg-[#F8F9F9] text-[#2C3E50] flex flex-col min-h-screen font-['Montserrat']">
 		<header class="bg-[#ACC7C7] border-b border-[#2C3E50]/10 shadow-sm sticky top-0 z-50">
 			<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-				<a href="/" class="flex items-center gap-3">
-					<Image src={logo} alt="Hidden Hills LLC Logo" class="h-12 w-auto" />
-					<span class="text-xl font-bold text-[#2C3E50] tracking-tight hidden sm:block">Hidden Hills <span class="text-[#2C3E50]/70">LLC</span></span>
-				</a>
+				<a href="/" class="text-xl font-bold text-[#2C3E50] tracking-tight">Hidden Hills <span class="text-[#2C3E50]/70">LLC</span></a>
 				<div class="hidden md:flex space-x-10">
 					<a href="/" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all underline decoration-2 underline-offset-4 decoration-[#2C3E50]/30">Home</a>
 					<a href="/services" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all">Services</a>

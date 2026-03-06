@@ -1,14 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import logo from '../assets/logo-transparent.png';
 ---
 
 <Layout title="Services">
-	<section class="bg-[#AED6F1] text-[#2C3E50] py-24 flex items-center justify-center relative overflow-hidden">
-		<div class="container mx-auto px-6 text-center z-10">
-			<h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight font-['Playfair_Display']">Services Offered</h1>
-			<p class="text-lg md:text-xl text-[#2C3E50]/80 max-w-2xl mx-auto leading-relaxed font-medium italic">
-				Efficient systems to save you time and energy.
-			</p>
+	<section class="bg-[#ACC7C7] text-[#2C3E50] py-24 flex items-center justify-center relative overflow-hidden">
+		<div class="container mx-auto px-6 z-10">
+			<div class="flex flex-col md:flex-row items-center justify-center gap-10">
+				<div class="w-32 md:w-40 shrink-0">
+					<Image src={logo} alt="Hidden Hills LLC Logo" class="w-full h-auto drop-shadow-xl" />
+				</div>
+				<div class="text-center md:text-left">
+					<h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight font-['Playfair_Display']">Services Offered</h1>
+					<p class="text-lg md:text-xl text-[#2C3E50]/80 max-w-2xl mx-auto leading-relaxed font-medium italic">
+						Efficient systems to save you time and energy.
+					</p>
+				</div>
+			</div>
 		</div>
 		<div class="absolute inset-0 opacity-20 pointer-events-none">
 			<svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
