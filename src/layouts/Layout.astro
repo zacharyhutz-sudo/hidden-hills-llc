@@ -25,11 +25,14 @@ const { title } = Astro.props;
 	<body class="bg-[#F8F9F9] text-[#2C3E50] flex flex-col min-h-screen font-['Montserrat']">
 		<header class="bg-[#ACC7C7] border-b border-[#2C3E50]/10 shadow-sm sticky top-0 z-50">
 			<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-				<a href="/" class="text-xl font-bold text-[#2C3E50] tracking-tight">Hidden Hills <span class="text-[#2C3E50]/70">LLC</span></a>
+				<a href="/hidden-hills-llc/" class="flex items-center gap-3">
+					<Image src={logo} alt="Hidden Hills LLC Logo" class="h-10 w-auto" style="filter: brightness(0) saturate(100%) invert(18%) sepia(26%) saturate(1088%) hue-rotate(169deg) brightness(93%) contrast(89%);" />
+					<span class="text-xl font-bold text-[#2C3E50] tracking-tight">Hidden Hills <span class="text-[#2C3E50]/70">LLC</span></span>
+				</a>
 				<div class="hidden md:flex space-x-10">
-					<a href="/" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all underline decoration-2 underline-offset-4 decoration-[#2C3E50]/30">Home</a>
-					<a href="/services" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all">Services</a>
-					<a href="/contact" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all">Contact</a>
+					<a href="/hidden-hills-llc/" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all underline decoration-2 underline-offset-4 decoration-[#2C3E50]/30">Home</a>
+					<a href="/hidden-hills-llc/services" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all">Services</a>
+					<a href="/hidden-hills-llc/contact" class="text-[#2C3E50] hover:opacity-70 font-bold transition-all">Contact</a>
 				</div>
 			</nav>
 		</header>
@@ -53,15 +56,15 @@ const { title } = Astro.props;
 				<div>
 					<h3 class="text-lg font-bold mb-6 text-[#AED6F1]">Quick Links</h3>
 					<ul class="space-y-4 text-[#AED6F1]/70">
-						<li><a href="/" class="hover:text-white transition-colors">Home</a></li>
-						<li><a href="/services" class="hover:text-white transition-colors">Services</a></li>
-						<li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
+						<li><a href="/hidden-hills-llc/" class="hover:text-white transition-colors">Home</a></li>
+						<li><a href="/hidden-hills-llc/services" class="hover:text-white transition-colors">Services</a></li>
+						<li><a href="/hidden-hills-llc/contact" class="hover:text-white transition-colors">Contact</a></li>
 					</ul>
 				</div>
 				<div>
 					<h3 class="text-lg font-bold mb-6 text-[#AED6F1]">Connect</h3>
 					<p class="text-[#AED6F1]/70 mb-4 italic">Let me help you take the administrative load off your plate.</p>
-					<a href="/contact" class="inline-block bg-[#AED6F1] hover:bg-[#85C1E9] text-[#2C3E50] px-6 py-3 rounded-lg font-bold transition-colors">Get in Touch</a>
+					<a href="/hidden-hills-llc/contact" class="inline-block bg-[#AED6F1] hover:bg-[#85C1E9] text-[#2C3E50] px-6 py-3 rounded-lg font-bold transition-colors">Get in Touch</a>
 				</div>
 			</div>
 			<div class="container mx-auto px-6 mt-16 pt-8 border-t border-[#5D6D7E]/30 text-center text-[#5D6D7E] text-sm font-medium">
