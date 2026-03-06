@@ -7,26 +7,33 @@ import logo from '../assets/logo-transparent.png';
 <Layout title="Services">
 	<section class="bg-[#ACC7C7] text-[#2C3E50] pt-20 md:pt-32 pb-24 md:pb-32 flex items-center justify-center relative overflow-hidden">
 		<!-- Large faded background logo -->
-		<div class="absolute top-12 -right-24 w-80 md:w-[600px] opacity-[0.03] pointer-events-none select-none">
+		<div class="absolute top-12 -right-24 w-80 md:w-[600px] opacity-[0.03] pointer-events-none select-none reveal-fade-up" style="transition-duration: 2s;">
 			<Image src={logo} alt="" class="w-full h-auto brightness-0" />
 		</div>
 
 		<div class="container mx-auto px-6 z-10">
 			<div class="max-w-5xl">
 				<div class="flex items-center gap-4 md:gap-6 mb-8 md:mb-12">
-					<div class="w-12 h-12 md:w-20 md:h-20 shrink-0 relative">
+					<div class="w-12 h-12 md:w-20 md:h-20 shrink-0 relative reveal-fade-up">
 						<div class="absolute inset-0 bg-[#2C3E50]/10 blur-2xl scale-110"></div>
 						<Image src={logo} alt="Hidden Hills LLC Logo" class="w-full h-auto relative z-10" style="filter: brightness(0) saturate(100%) invert(18%) sepia(26%) saturate(1088%) hue-rotate(169deg) brightness(93%) contrast(89%);" />
 					</div>
-					<div class="h-[1px] flex-grow bg-[#2C3E50]/10 hidden md:block"></div>
-					<span class="text-[10px] md:text-xs uppercase tracking-[0.4em] font-bold text-[#2C3E50]/40 whitespace-nowrap">Capabilities</span>
+					<div class="h-[1px] flex-grow bg-[#2C3E50]/10 hidden md:block reveal-line"></div>
+					<span class="text-[10px] md:text-xs uppercase tracking-[0.4em] font-bold text-[#2C3E50]/40 whitespace-nowrap reveal-fade-up">Capabilities</span>
 				</div>
 
 				<h1 class="text-5xl md:text-8xl lg:text-9xl font-bold mb-8 md:mb-10 tracking-tighter font-['EB_Garamond'] leading-[0.9] md:leading-[0.85] text-balance">
-					Services <br class="hidden md:block" /><span class="italic font-normal opacity-80">Offered.</span>
+					<div class="reveal-text">
+						<div class="reveal-text-content">Services</div>
+					</div>
+					<div class="reveal-text">
+						<div class="reveal-text-content">
+							<br class="hidden md:block" /><span class="italic font-normal opacity-80">Offered.</span>
+						</div>
+					</div>
 				</h1>
 				
-				<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 md:gap-12 mt-12 md:mt-16">
+				<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 md:gap-12 mt-12 md:mt-16 reveal-fade-up">
 					<p class="text-lg md:text-2xl text-[#2C3E50]/70 leading-relaxed font-light max-w-xl">
 						Comprehensive administrative and financial solutions tailored to help your organization scale with precision.
 					</p>
@@ -45,7 +52,7 @@ import logo from '../assets/logo-transparent.png';
 		<div class="container mx-auto px-6">
 			<div class="grid grid-cols-1 lg:grid-cols-2 gap-px bg-[#2C3E50]/5 overflow-hidden border border-[#2C3E50]/5">
 				<!-- Bookkeeping & Accounting -->
-				<div class="p-10 md:p-16 bg-white hover:bg-[#FCFAFA] transition-all group relative">
+				<div class="p-10 md:p-16 bg-white hover:bg-[#FCFAFA] transition-all group relative reveal-fade-up">
 					<span class="text-4xl md:text-5xl font-['EB_Garamond'] text-[#ACC7C7]/20 absolute top-6 md:top-8 right-6 md:right-8 select-none group-hover:text-[#ACC7C7] transition-colors">01</span>
 					<div class="w-12 h-[1px] bg-[#ACC7C7] mb-8"></div>
 					<h2 class="text-2xl md:text-3xl font-bold mb-6 text-[#2C3E50] font-['EB_Garamond'] leading-tight">Bookkeeping <br />& Accounting</h2>
@@ -60,7 +67,7 @@ import logo from '../assets/logo-transparent.png';
 				</div>
 
 				<!-- Process Improvement -->
-				<div class="p-10 md:p-16 bg-white hover:bg-[#FCFAFA] transition-all group relative">
+				<div class="p-10 md:p-16 bg-white hover:bg-[#FCFAFA] transition-all group relative reveal-fade-up" style="transition-delay: 100ms;">
 					<span class="text-4xl md:text-5xl font-['EB_Garamond'] text-[#ACC7C7]/20 absolute top-6 md:top-8 right-6 md:right-8 select-none group-hover:text-[#ACC7C7] transition-colors">02</span>
 					<div class="w-12 h-[1px] bg-[#ACC7C7] mb-8"></div>
 					<h2 class="text-2xl md:text-3xl font-bold mb-6 text-[#2C3E50] font-['EB_Garamond'] leading-tight">Process <br />Improvement</h2>
@@ -75,7 +82,7 @@ import logo from '../assets/logo-transparent.png';
 				</div>
 
 				<!-- Spreadsheet Creation/Automation -->
-				<div class="p-10 md:p-16 bg-white hover:bg-[#FCFAFA] transition-all group relative border-t border-[#2C3E50]/5 lg:border-t-0">
+				<div class="p-10 md:p-16 bg-white hover:bg-[#FCFAFA] transition-all group relative border-t border-[#2C3E50]/5 lg:border-t-0 reveal-fade-up" style="transition-delay: 200ms;">
 					<span class="text-4xl md:text-5xl font-['EB_Garamond'] text-[#ACC7C7]/20 absolute top-6 md:top-8 right-6 md:right-8 select-none group-hover:text-[#ACC7C7] transition-colors">03</span>
 					<div class="w-12 h-[1px] bg-[#ACC7C7] mb-8"></div>
 					<h2 class="text-2xl md:text-3xl font-bold mb-6 text-[#2C3E50] font-['EB_Garamond'] leading-tight">Spreadsheet <br />Automation</h2>
@@ -90,7 +97,7 @@ import logo from '../assets/logo-transparent.png';
 				</div>
 
 				<!-- Other Special Projects -->
-				<div class="p-10 md:p-16 bg-white hover:bg-[#FCFAFA] transition-all group relative">
+				<div class="p-10 md:p-16 bg-white hover:bg-[#FCFAFA] transition-all group relative reveal-fade-up" style="transition-delay: 300ms;">
 					<span class="text-4xl md:text-5xl font-['EB_Garamond'] text-[#ACC7C7]/20 absolute top-6 md:top-8 right-6 md:right-8 select-none group-hover:text-[#ACC7C7] transition-colors">04</span>
 					<div class="w-12 h-[1px] bg-[#ACC7C7] mb-8"></div>
 					<h2 class="text-2xl md:text-3xl font-bold mb-8 text-[#2C3E50] font-['EB_Garamond'] leading-tight">Special <br />Projects</h2>
@@ -105,7 +112,7 @@ import logo from '../assets/logo-transparent.png';
 				</div>
 			</div>
 			
-			<div class="mt-16 md:mt-24 bg-[#2C3E50] p-10 md:p-24 text-center text-white relative overflow-hidden group">
+			<div class="mt-16 md:mt-24 bg-[#2C3E50] p-10 md:p-24 text-center text-white relative overflow-hidden group reveal-fade-up">
 				<div class="relative z-10">
 					<h2 class="text-4xl md:text-7xl font-bold mb-6 md:mb-8 font-['EB_Garamond'] leading-none">Let's build something <br /><span class="italic font-normal opacity-40">efficient.</span></h2>
 					<p class="text-[#ACC7C7] text-lg md:text-2xl mb-8 md:mb-12 max-w-xl mx-auto font-light">I'd love to learn about your business and see how I can help you save time.</p>

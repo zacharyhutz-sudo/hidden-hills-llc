@@ -8,26 +8,33 @@ import curtis from '../assets/curtis-folsom.png';
 <Layout title="Home">
 	<section class="bg-[#ACC7C7] text-[#2C3E50] pt-20 md:pt-32 pb-24 md:pb-32 flex items-center justify-center relative overflow-hidden">
 		<!-- Large faded background logo -->
-		<div class="absolute top-12 -right-24 w-80 md:w-[600px] opacity-[0.03] pointer-events-none select-none">
+		<div class="absolute top-12 -right-24 w-80 md:w-[600px] opacity-[0.03] pointer-events-none select-none reveal-fade-up" style="transition-duration: 2s;">
 			<Image src={logo} alt="" class="w-full h-auto brightness-0" />
 		</div>
 
 		<div class="container mx-auto px-6 z-10">
 			<div class="max-w-5xl">
 				<div class="flex items-center gap-4 md:gap-6 mb-8 md:mb-12">
-					<div class="w-12 h-12 md:w-20 md:h-20 shrink-0 relative">
+					<div class="w-12 h-12 md:w-20 md:h-20 shrink-0 relative reveal-fade-up">
 						<div class="absolute inset-0 bg-[#2C3E50]/10 blur-2xl scale-110"></div>
 						<Image src={logo} alt="Hidden Hills LLC Logo" class="w-full h-auto relative z-10" style="filter: brightness(0) saturate(100%) invert(18%) sepia(26%) saturate(1088%) hue-rotate(169deg) brightness(93%) contrast(89%);" />
 					</div>
-					<div class="h-[1px] flex-grow bg-[#2C3E50]/10 hidden md:block"></div>
-					<span class="text-[10px] md:text-xs uppercase tracking-[0.4em] font-bold text-[#2C3E50]/40 whitespace-nowrap">Business Solutions</span>
+					<div class="h-[1px] flex-grow bg-[#2C3E50]/10 hidden md:block reveal-line"></div>
+					<span class="text-[10px] md:text-xs uppercase tracking-[0.4em] font-bold text-[#2C3E50]/40 whitespace-nowrap reveal-fade-up">Business Solutions</span>
 				</div>
 
 				<h1 class="text-5xl md:text-8xl lg:text-9xl font-bold mb-8 md:mb-10 tracking-tighter font-['EB_Garamond'] leading-[0.9] md:leading-[0.85] text-balance">
-					Focus on what <br class="hidden md:block" />you <span class="italic font-normal opacity-80">really love.</span>
+					<div class="reveal-text">
+						<div class="reveal-text-content">Focus on what</div>
+					</div>
+					<div class="reveal-text">
+						<div class="reveal-text-content">
+							<br class="hidden md:block" />you <span class="italic font-normal opacity-80">really love.</span>
+						</div>
+					</div>
 				</h1>
 				
-				<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 md:gap-12 mt-12 md:mt-16">
+				<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 md:gap-12 mt-12 md:mt-16 reveal-fade-up">
 					<p class="text-lg md:text-2xl text-[#2C3E50]/70 leading-relaxed font-light max-w-xl">
 						I'm Curtis Folsom. I streamline the administrative load so you can focus on growth.
 					</p>
@@ -48,13 +55,13 @@ import curtis from '../assets/curtis-folsom.png';
 	<section class="py-20 md:py-32 bg-[#FCFAFA]">
 		<div class="container mx-auto px-6">
 			<div class="flex flex-col md:flex-row gap-12 md:gap-24 items-center">
-				<div class="md:w-5/12 relative">
+				<div class="md:w-5/12 relative reveal-fade-up">
 					<div class="relative z-10 group">
 						<Image src={curtis} alt="Curtis Folsom" class="shadow-[0_40px_80px_-15px_rgba(0,0,0,0.15)] w-full h-auto transition-all duration-700" />
 					</div>
 					<div class="absolute -top-10 -left-10 w-40 h-40 bg-[#ACC7C7] -z-10 opacity-30 blur-2xl"></div>
 				</div>
-				<div class="md:w-7/12">
+				<div class="md:w-7/12 reveal-fade-up">
 					<span class="text-xs uppercase tracking-[0.3em] font-bold text-[#ACC7C7] mb-4 md:mb-6 block">The Person</span>
 					<h2 class="text-4xl md:text-7xl font-bold text-[#2C3E50] mb-6 md:mb-10 font-['EB_Garamond'] leading-tight">About Curtis</h2>
 					<div class="space-y-6 text-base md:text-xl text-[#2C3E50]/70 leading-relaxed font-light">
@@ -80,12 +87,12 @@ import curtis from '../assets/curtis-folsom.png';
 	<section class="py-20 bg-white border-y border-[#2C3E50]/5">
 		<div class="container mx-auto px-6">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#2C3E50]/5 overflow-hidden border border-[#2C3E50]/5">
-				<div class="p-10 md:p-20 bg-white hover:bg-[#FCFAFA] transition-colors group">
+				<div class="p-10 md:p-20 bg-white hover:bg-[#FCFAFA] transition-colors group reveal-fade-up">
 					<span class="text-2xl md:text-3xl font-['EB_Garamond'] text-[#ACC7C7] mb-4 md:mb-6 block font-bold">01</span>
 					<h3 class="text-2xl md:text-3xl font-bold mb-4 text-[#2C3E50] font-['EB_Garamond'] group-hover:translate-x-2 transition-transform">Expert Systems</h3>
 					<p class="text-[#2C3E50]/60 leading-relaxed text-base md:text-lg font-light italic">Leading software transitions, historical data cleanup, and bookkeeping excellence.</p>
 				</div>
-				<div class="p-10 md:p-20 bg-white hover:bg-[#FCFAFA] transition-colors group">
+				<div class="p-10 md:p-20 bg-white hover:bg-[#FCFAFA] transition-colors group reveal-fade-up" style="transition-delay: 200ms;">
 					<span class="text-2xl md:text-3xl font-['EB_Garamond'] text-[#ACC7C7] mb-4 md:mb-6 block font-bold">02</span>
 					<h3 class="text-2xl md:text-3xl font-bold mb-4 text-[#2C3E50] font-['EB_Garamond'] group-hover:translate-x-2 transition-transform">Local Expertise</h3>
 					<p class="text-[#2C3E50]/60 leading-relaxed text-base md:text-lg font-light italic">A business solutions company based in Athens, GA, helping local business owners succeed.</p>
