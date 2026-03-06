@@ -6,21 +6,32 @@ import curtis from '../assets/curtis-folsom.png';
 ---
 
 <Layout title="Home">
-	<section class="bg-[#ACC7C7] text-[#2C3E50] py-32 flex items-center justify-center relative overflow-hidden">
+	<section class="bg-[#ACC7C7] text-[#2C3E50] pt-48 pb-32 flex items-center justify-center relative overflow-hidden">
+		<!-- Large faded background logo -->
+		<div class="absolute -top-24 -right-24 w-96 md:w-[600px] opacity-[0.03] pointer-events-none select-none">
+			<Image src={logo} alt="" class="w-full h-auto brightness-0" />
+		</div>
+
 		<div class="container mx-auto px-6 z-10">
-			<div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
-				<div class="w-48 md:w-64 lg:w-72 shrink-0 relative">
-					<div class="absolute inset-0 bg-[#2C3E50]/5 blur-3xl rounded-full scale-110"></div>
-					<Image src={logo} alt="Hidden Hills LLC Logo" class="w-full h-auto relative z-10 drop-shadow-2xl" style="filter: brightness(0) saturate(100%) invert(18%) sepia(26%) saturate(1088%) hue-rotate(169deg) brightness(93%) contrast(89%);" />
+			<div class="max-w-5xl">
+				<div class="flex items-center gap-6 mb-12">
+					<div class="w-16 h-16 md:w-20 md:h-20 shrink-0 relative">
+						<div class="absolute inset-0 bg-[#2C3E50]/10 blur-2xl rounded-full scale-110"></div>
+						<Image src={logo} alt="Hidden Hills LLC Logo" class="w-full h-auto relative z-10" style="filter: brightness(0) saturate(100%) invert(18%) sepia(26%) saturate(1088%) hue-rotate(169deg) brightness(93%) contrast(89%);" />
+					</div>
+					<div class="h-[1px] flex-grow bg-[#2C3E50]/10 hidden md:block"></div>
+					<span class="text-xs uppercase tracking-[0.4em] font-bold text-[#2C3E50]/40 whitespace-nowrap">Business Solutions</span>
 				</div>
-				<div class="text-left max-w-3xl">
-					<h1 class="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 tracking-tighter font-['EB_Garamond'] leading-[0.85] text-balance">
-						Focus on what <br />you <span class="italic font-normal opacity-80">really love.</span>
-					</h1>
-					<p class="text-xl md:text-2xl text-[#2C3E50]/70 mb-10 leading-relaxed font-normal max-w-xl">
+
+				<h1 class="text-6xl md:text-8xl lg:text-[10rem] font-bold mb-10 tracking-tighter font-['EB_Garamond'] leading-[0.8] text-balance">
+					Focus on what <br />you <span class="italic font-normal opacity-80">really love.</span>
+				</h1>
+				
+				<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-12 mt-16">
+					<p class="text-xl md:text-2xl text-[#2C3E50]/70 leading-relaxed font-light max-w-xl">
 						I'm Curtis Folsom. I streamline the administrative load so you can focus on growth.
 					</p>
-					<div class="flex flex-col sm:flex-row gap-6">
+					<div class="flex flex-col sm:flex-row gap-6 shrink-0">
 						<a href="/hidden-hills-llc/services" class="group relative inline-flex items-center justify-center px-10 py-4 bg-[#2C3E50] text-white rounded-full font-bold text-xs uppercase tracking-widest overflow-hidden transition-all hover:scale-105 active:scale-95">
 							<span class="relative z-10">View Services</span>
 							<div class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
@@ -32,7 +43,6 @@ import curtis from '../assets/curtis-folsom.png';
 				</div>
 			</div>
 		</div>
-		<div class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent pointer-events-none"></div>
 	</section>
 
 	<section class="py-24 md:py-32 bg-[#FCFAFA]">
