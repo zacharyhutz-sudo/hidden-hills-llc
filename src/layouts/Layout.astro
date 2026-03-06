@@ -68,7 +68,7 @@ const isContact = title === 'Contact';
 					});
 				}, observerOptions);
 
-				const animatedElements = document.querySelectorAll('.reveal-text-content, .reveal-fade-up, .reveal-line');
+				const animatedElements = document.querySelectorAll('.reveal-text-content, .reveal-fade-up, .reveal-line, .reveal-hero');
 				animatedElements.forEach(el => observer.observe(el));
 
 				// Force reveal for elements already in view (like the Hero)

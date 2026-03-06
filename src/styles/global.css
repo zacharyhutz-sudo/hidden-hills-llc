@@ -25,6 +25,19 @@
         transform: translateY(0);
     }
 
+    .reveal-hero {
+        opacity: 0;
+        filter: blur(15px);
+        transform: translateY(30px);
+        transition: all 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-hero.reveal-active {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+
     .reveal-line {
         transform: scaleX(0);
         transform-origin: left;
