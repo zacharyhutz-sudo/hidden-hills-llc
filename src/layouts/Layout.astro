@@ -57,7 +57,7 @@ const isContact = title === 'Contact';
 				const observerOptions = {
 					root: null,
 					rootMargin: '0px',
-					threshold: 0.1
+					threshold: 0.01 // Very low threshold to ensure it triggers
 				};
 
 				const observer = new IntersectionObserver((entries) => {
@@ -70,10 +70,24 @@ const isContact = title === 'Contact';
 
 				const animatedElements = document.querySelectorAll('.reveal-text-content, .reveal-fade-up, .reveal-line');
 				animatedElements.forEach(el => observer.observe(el));
+
+				// Force reveal for elements already in view (like the Hero)
+				setTimeout(() => {
+					animatedElements.forEach(el => {
+						const rect = el.getBoundingClientRect();
+						if (rect.top < window.innerHeight && rect.bottom > 0) {
+							el.classList.add('reveal-active');
+						}
+					});
+				}, 100);
 			};
 
 			// Run on initial load
-			initAnimations();
+			if (document.readyState === 'loading') {
+				document.addEventListener('DOMContentLoaded', initAnimations);
+			} else {
+				initAnimations();
+			}
 
 			// Run after view transitions
 			document.addEventListener('astro:after-swap', initAnimations);
