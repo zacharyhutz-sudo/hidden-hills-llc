@@ -1,0 +1,64 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Hidden Hills LLC</title>
+	</head>
+	<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+		<header class="bg-white border-b border-gray-200 shadow-sm">
+			<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+				<a href="/" class="text-2xl font-bold text-blue-800 tracking-tight">Hidden Hills <span class="text-gray-600">LLC</span></a>
+				<div class="hidden md:flex space-x-10">
+					<a href="/" class="text-gray-600 hover:text-blue-800 font-medium transition-colors">Home</a>
+					<a href="/services" class="text-gray-600 hover:text-blue-800 font-medium transition-colors">Services</a>
+					<a href="/contact" class="text-gray-600 hover:text-blue-800 font-medium transition-colors">Contact</a>
+				</div>
+			</nav>
+		</header>
+
+		<main class="flex-grow">
+			<slot />
+		</main>
+
+		<footer class="bg-gray-900 text-white py-16">
+			<div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+				<div>
+					<h3 class="text-xl font-bold mb-6">Hidden Hills LLC</h3>
+					<p class="text-gray-400 leading-relaxed">
+						Empowering businesses through financial clarity and operational excellence. 
+						Specializing in bookkeeping, process improvement, and strategic consulting.
+					</p>
+				</div>
+				<div>
+					<h3 class="text-lg font-bold mb-6">Quick Links</h3>
+					<ul class="space-y-4 text-gray-400">
+						<li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+						<li><a href="/services" class="hover:text-white transition-colors">Services</a></li>
+						<li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="text-lg font-bold mb-6">Connect</h3>
+					<p class="text-gray-400 mb-4 italic">Let's build something efficient together.</p>
+					<a href="/contact" class="inline-block bg-blue-700 hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold transition-colors">Get in Touch</a>
+				</div>
+			</div>
+			<div class="container mx-auto px-6 mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
+				&copy; {new Date().getFullYear()} Hidden Hills LLC. All rights reserved.
+			</div>
+		</footer>
+	</body>
+</html>
